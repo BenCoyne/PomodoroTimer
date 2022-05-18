@@ -67,6 +67,10 @@ const clickResetButton = () => {
 	displayTime();
 };
 
+const clickPomodoroButton = () => {
+	changeCountdownAmount(25, "Pomodoro");
+};
+
 const clickShortBreakButton = () => {
 	changeCountdownAmount(5, "Short Break");
 };
@@ -74,3 +78,4 @@ const clickShortBreakButton = () => {
 startStopButton.addEventListener("click", clickStartStopButton);
 resetButton.addEventListener("click", clickResetButton);
 shortBreakButton.addEventListener("click", clickShortBreakButton);
+pomodoroButton.addEventListener("click", clickPomodoroButton);
