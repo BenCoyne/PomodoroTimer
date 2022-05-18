@@ -1,6 +1,10 @@
 const countdown = document.getElementById("countdown");
 const startStopButton = document.getElementById("start-stop");
 const resetButton = document.getElementById("reset");
+const pomodoroButton = document.getElementById("pomodoro");
+const shortBreakButton = document.getElementById("short-break");
+const longBreakButton = document.getElementById("long-break");
+const titleText = document.getElementById("title");
 
 let startingMinutes = 25;
 let time = startingMinutes * 60;
@@ -37,6 +41,14 @@ const startCountdown = () => {
 	}, 1000);
 };
 
+const changeCountdownAmount = (mins, text) => {
+	startingMinutes = mins;
+	time = startingMinutes * 60;
+	titleText.innerHTML = text;
+	timerActive = false;
+	displayTime();
+};
+
 const clickStartStopButton = () => {
 	if (startStopButton.innerHTML === "Start") {
 		startStopButton.innerHTML = "Stop";
@@ -55,5 +67,10 @@ const clickResetButton = () => {
 	displayTime();
 };
 
+const clickShortBreakButton = () => {
+	changeCountdownAmount(5, "Short Break");
+};
+
 startStopButton.addEventListener("click", clickStartStopButton);
 resetButton.addEventListener("click", clickResetButton);
+shortBreakButton.addEventListener("click", clickShortBreakButton);
