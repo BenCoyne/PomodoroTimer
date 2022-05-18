@@ -75,7 +75,12 @@ const clickShortBreakButton = () => {
 	changeCountdownAmount(5, "Short Break");
 };
 
+const clickLongBreakButton = () => {
+	changeCountdownAmount(10, "Long Break");
+};
+
 startStopButton.addEventListener("click", clickStartStopButton);
 resetButton.addEventListener("click", clickResetButton);
 shortBreakButton.addEventListener("click", clickShortBreakButton);
 pomodoroButton.addEventListener("click", clickPomodoroButton);
+longBreakButton.addEventListener("click", clickLongBreakButton);
