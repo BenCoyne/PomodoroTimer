@@ -1,5 +1,5 @@
 const countdown = document.getElementById("countdown");
-const startButton = document.getElementById("start");
+const startStopButton = document.getElementById("start-stop");
 
 let startingMinutes = 25;
 let time = startingMinutes * 60;
@@ -17,15 +17,34 @@ const updateTime = () => {
 	time--;
 };
 
-const startCountdown = () => {
-	setTimeout(
-		() => {
-			updateTime();
-			startCountdown();
-		},
-
-		1000
-	);
+const checkTime = () => {
+	return time >= 0;
 };
 
-startButton.addEventListener("click", startCountdown);
+const activateTimer = () => {
+	timerActive = true;
+};
+
+const startCountdown = () => {
+	setTimeout(() => {
+		if (timerActive) {
+			if (checkTime()) {
+				updateTime();
+				startCountdown();
+			}
+		}
+	}, 1000);
+};
+
+const clickStartStopButton = () => {
+	if (startStopButton.innerHTML === "Start") {
+		startStopButton.innerHTML = "Stop";
+		activateTimer();
+		startCountdown();
+	} else {
+		startStopButton.innerHTML = "Start";
+		timerActive = false;
+	}
+};
+
+startStopButton.addEventListener("click", clickStartStopButton);
