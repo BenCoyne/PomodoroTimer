@@ -1,5 +1,6 @@
 const countdown = document.getElementById("countdown");
 const startStopButton = document.getElementById("start-stop");
+const resetButton = document.getElementById("reset");
 
 let startingMinutes = 25;
 let time = startingMinutes * 60;
@@ -47,4 +48,12 @@ const clickStartStopButton = () => {
 	}
 };
 
+const clickResetButton = () => {
+	startStopButton.innerHTML = "Start";
+	time = startingMinutes * 60;
+	timerActive = false;
+	displayTime();
+};
+
 startStopButton.addEventListener("click", clickStartStopButton);
+resetButton.addEventListener("click", clickResetButton);
