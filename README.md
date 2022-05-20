@@ -16,4 +16,4 @@ open index.html
 
 ## Preview
 
-<!-- ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif) -->
+![Alt Text](https://github.com/BenCoyne/PomodoroTimer/blob/main/pomGif.gif)
