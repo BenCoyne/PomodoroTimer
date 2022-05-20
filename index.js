@@ -71,16 +71,19 @@ const clickStartStopButton = () => {
 
 const clickPomodoroButton = () => {
 	changeCountdownAmount(25, "Pomodoro");
+	startStopButton.innerHTML = "Start";
 	timeDisplayBox.style.boxShadow = "2px 2px 2px 2px rgba(249, 15, 101, 0.804)";
 };
 
 const clickShortBreakButton = () => {
 	changeCountdownAmount(5, "Short Break");
+	startStopButton.innerHTML = "Start";
 	timeDisplayBox.style.boxShadow = "2px 2px 2px 2px rgba(88, 166, 255, 0.804)";
 };
 
 const clickLongBreakButton = () => {
 	changeCountdownAmount(10, "Long Break");
+	startStopButton.innerHTML = "Start";
 	timeDisplayBox.style.boxShadow = "2px 2px 2px 2px rgba(189, 80, 222, 0.804)";
 };
 
