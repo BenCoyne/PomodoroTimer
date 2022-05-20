@@ -16,6 +16,6 @@ Clone the project and in the terminal run:
 open index.html
 ```
 
-## Preview
+## Preview 💻
 
 ![Alt Text](https://github.com/BenCoyne/PomodoroTimer/blob/main/pomGif.gif)
