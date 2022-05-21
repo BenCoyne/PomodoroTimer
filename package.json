@@ -1,0 +1,24 @@
+{
+	"name": "pomodorotimer",
+	"version": "1.0.0",
+	"description": "![](https://github.com/BenCoyne/PomodoroTimer/blob/main/pom_banner.png)",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BenCoyne/PomodoroTimer.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/BenCoyne/PomodoroTimer/issues"
+	},
+	"homepage": "https://github.com/BenCoyne/PomodoroTimer#readme",
+	"dependencies": {
+		"express": "^4.18.1",
+		"nodemon": "^2.0.16"
+	}
+}
