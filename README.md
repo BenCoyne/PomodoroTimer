@@ -6,15 +6,23 @@ According to Wikipedia, the Pomodoro Technique is a time management method devel
 
 ## How it works ⏲️
 
-By operating the associated buttons, users can run a countdown timer of 25 minutes, 10 minutes or 5 minutes. The User can start, stop or reset the Timer. 
+By operating the associated buttons, users can run a countdown timer of 25 minutes, 10 minutes or 5 minutes. The User can start, stop or reset the Timer.
 
 ## Try it for yourself 🙂
 
-Clone the project and in the terminal run:
+Clone the project and install the dependencies using:
 
 ```
-open index.html
+npm install
 ```
+
+In the terminal run:
+
+```
+nodemon server.js
+```
+
+Visit http://localhost:3000 and start Pomodoro-ing!
 
 ## Preview 💻
 
