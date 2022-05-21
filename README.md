@@ -1,4 +1,4 @@
-![](https://github.com/BenCoyne/PomodoroTimer/blob/main/pom_banner.png)
+![](https://github.com/BenCoyne/PomodoroTimer/blob/main/assets/pom_banner.png)
 
 ## Quick build of a Pomodoro Timer 🍅
 
@@ -18,4 +18,4 @@ open index.html
 
 ## Preview 💻
 
-![Alt Text](https://github.com/BenCoyne/PomodoroTimer/blob/main/pomGif.gif)
+![Alt Text](https://github.com/BenCoyne/PomodoroTimer/blob/main/assets/pomGif.gif)
